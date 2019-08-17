@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-xl bg-dark  h">
+    <p class="navbar-brand title">Mentor on Demand</p>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="navbar-toggler  navbartoggle-btn" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+         <span class="navbar-toggler-icon "></span> yep
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <form (ngSubmit)="searchResult(search)" #search="ngForm">
+            <table>
+                <tr>
+                    <td>
+        <input class="form-control  " type="text" placeholder="Search...." name="searchField" ngModel>
+        </td>
+        <td>
+        <button type="submit" class="btn btn-info searchbtn" style="margin-left: 5px"  >
+            <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+        </td></tr></table>
+        </form>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              
+                    <div class="dropdown nav-link">
+                            <a class="dropdown-toggle" href="#"  id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             Login
+                            </a>
+                          
+                            <div id="dropdown-login" class="dropdown-menu" style="background-color: #3a3840;" aria-labelledby="dropdownMenuLink">
+                            <a class="nav-link" data-toggle="modal" href="#LearnerModal">Learner</a>
+                            <a class="nav-link" data-toggle="modal" href="#MentorModal">Mentor</a>
+                            </div>
+                          </div>
+               
+                
+            </li>
+            <li class="nav-item">
+
+                    <div class="dropdown nav-link">
+                            <a class="dropdown-toggle" href="#"  id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             SignUp
+                            </a>
+                          
+                            <div id="dropdown-login" class="dropdown-menu" style="background-color: #3a3840;" aria-labelledby="dropdownMenuLink">
+                                    <a class="nav-link"  routerLink="/LearnerSignUp">LearnerSignUp</a>
+                                    <a class="nav-link"  routerLink="/MentorSignUp">MentorSignUp</a>
+                            </div>
+                          </div>
+
+                
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Progress</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<app-login></app-login>

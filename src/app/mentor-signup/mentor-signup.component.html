@@ -1,0 +1,83 @@
+<div class="signup-form">
+        <form action="/examples/actions/confirmation.php" method="post" class="form-horizontal">
+            <div class="col-xs-8 col-xs-offset-4">
+                <h2>Sign Up(Mentor)</h2>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-4">Username</label>
+                <div class="col-xs-8">
+                    <input type="text" class="form-control" name="username" required="required">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-4">Email Address</label>
+                <div class="col-xs-8">
+                    <input type="email" class="form-control" name="email" required="required">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-4">Password</label>
+                <div class="col-xs-8">
+                    <input type="password" class="form-control" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required="required">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-4">Confirm Password</label>
+                <div class="col-xs-8">
+                    <input type="password" class="form-control" name="confirm_password" id="confirm_password" pattern="" title="confirm password field does not match with password field!!" required="required">
+                </div>
+            </div>
+            <div class="form-group">
+                    <label class="control-label col-xs-4">Mobile Number</label>
+                    <div class="col-xs-8">
+                        <input type="number" class="form-control" name="mobile" maxlength="10" required="required">
+                    </div>
+                </div>
+            <div class="form-group">
+                <label class="control-label col-xs-4">Technologies</label>
+                <div class="col-xs-8" >
+                    <select class="form-control" id="sel">
+                        <option>Java</option>
+                        <option>Angualar</option>
+                        <option>Full stack</option>
+                        <option>Python</option>
+                        <option>ReactJS</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-4">TimeSlot</label>
+                <div class="col-xs-8" >
+                    <select class="form-control" id="sel">
+                        <option>12:00 A.M-6:00 A.M</option>
+                        <option>6:00 A.M-12:00 P.M</option>
+                        <option>12:00 P.M-6:00 P.M</option>
+                        <option>6:00 P.M-12:00 A.M</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                    <label class="control-label col-xs-4">LinkedIn URL</label>
+                    <div class="col-xs-8">
+                        <input type="url" class="form-control" name="LinkedIn" >
+                    </div>
+                </div>
+            <div class="form-group">
+                <label class="control-label col-xs-4">Experience</label>
+                <div class="col-xs-8">
+                    <input type="text" class="form-control" name="experience" required="required">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-8 col-xs-offset-4">
+                    <p><label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a
+                                href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a>.</label></p>
+                    <button type="submit"  class="btn btn-primary btn-lg">Sign Up</button>
+                </div>
+            </div>
+        </form>
+        <div class="text-center">Already have an account? <a href="#MentorModal" data-toggle="modal">Login here</a></div>
+      
+    </div>
+    <app-login></app-login>

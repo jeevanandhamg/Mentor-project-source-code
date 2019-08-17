@@ -1,0 +1,39 @@
+.h {
+    background-color: rgb(243, 212, 171);
+}
+
+.title {
+    color: rgb(10, 235, 235);
+    font-size: 35px;
+}
+
+a {
+    color: rgb(10, 235, 235);
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: rgb(10, 235, 66);
+    font-size: 20px;
+    text-decoration: none;
+
+}
+#dropdown-login a:hover{
+    color:whitesmoke;
+}
+
+.search {
+    width: 400px;
+    height: 40px;
+}
+
+.searchbtn {
+    background-color: rgb(10, 235, 235);
+    color: black;
+}
+
+.navbartoggle-btn {
+    background-color: rgb(10, 235, 235); 
+}

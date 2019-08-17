@@ -1,0 +1,76 @@
+
+
+<div class="container">
+    <!-- The Modal -->
+    <div class="modal" id="LearnerModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header bg-dark" id="LearnerModal-header">
+                    <h4 class="modal-title" style="color: whitesmoke">LogIn as Learner</h4>
+                    <button type="button" class="close" data-dismiss="modal"
+                        style="color:whitesmoke">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    
+                        <input type="text" class="form-control" id="Suname" placeholder="UserName..."><br>
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password..."><br>
+                        <input type="checkbox" id="showpass">
+                        <label for="showpass">&nbsp;<i>ShowPassword</i></label><br>
+                        <button type="button" class="btn btn-primary mb-2">Log in</button>
+                    
+                 <p><i>To Register: <a routerLink="/LearnerSignUp" id="signupLearner">SignUp</a></i></p>
+                </div>
+
+
+
+                <!-- Modal footer -->
+                <div class="modal-footer bg-dark" id="LearnerModal-footer">
+                    <button type="button" class="btn btn-danger" id="closeLearner" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- The Modal -->
+    <div class="modal" id="MentorModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+      
+                <!-- Modal Header -->
+                <div class="modal-header bg-dark" id="MentorModal-header">
+                  <h4 class="modal-title" style="color:whitesmoke">LogIn as Mentor</h4>
+                  <button type="button" class="close" data-dismiss="modal" style="color: whitesmoke">&times;</button>
+                </div>
+      
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <form>
+                    <input type="text" class="form-control" id="Muname" placeholder="UserName..."><br>
+                    <input type="password" class="form-control" id="inputPassword2" placeholder="Password..."><br>
+                    <input type="checkbox" id="showpass2">
+                    <label for="showpass2">&nbsp;<i>ShowPassword</i></label><br>
+                    <button type="submit" class="btn btn-primary mb-2">Log in</button>
+                  </form>
+                  <p><i>To Register: <a routerLink="/MentorSignUp" id="signupMentor">SignUp</a></i></p>
+                </div>
+      
+      
+      
+                <!-- Modal footer -->
+                <div class="modal-footer bg-dark" id="MentorModal-footer">
+                  <button type="button" id="closeMentor" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+      
+    </div>
+
+
